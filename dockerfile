@@ -8,10 +8,10 @@ WORKDIR /app
 ADD . /app
 
 # Installera alla nödvändiga paket specificerade i requirements.txt
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir flask twilio
 
-# Gör port 80 tillgänglig för världen utanför denna behållare
-EXPOSE 80
+# Gör port 5000 tillgänglig för världen utanför denna behållare
+EXPOSE 5000
 
-# Kör app.py när behållaren startar
+# Kör script.py när behållaren startar
 CMD ["python", "script.py"]
