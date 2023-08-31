@@ -20,5 +20,7 @@ def send_sms():
         print(f"SMS skickat till {phone_number}. SID: {message.sid}")
     return "SMS sent!"
 
+    dflkjdflkdf
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', debug=True)
